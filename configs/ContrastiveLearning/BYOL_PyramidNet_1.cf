@@ -1,0 +1,22 @@
+epochs=400
+warmup_epochs=10
+
+workers=16
+
+num_classes=10
+out_dim=128
+batch_size=256
+lr=2e-1
+
+weight_decay=1e-4
+no_bias_decay = False
+
+optim = 'sgd'
+
+model = 'BYOL'
+depth = 50
+alpha = 200
+
+m = 0.999
+kNN = True
+amp = True

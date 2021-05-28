@@ -1,0 +1,53 @@
+epochs=400
+warmup_epochs=10
+
+workers=8
+
+num_classes=10
+
+batch_size=256
+lr=5e-4
+min_lr=1e-6
+
+weight_decay=4e-3
+weight_decay_end=4e-2
+no_bias_decay = False
+clip_grad=3.
+
+freeze_last_layer=1
+
+optim = 'adamw'
+
+model = 'DINO'
+
+kNN = True
+amp = True
+
+#ViT params
+patch_size=4
+dim=192
+depth=12
+heads=3
+mlp_dim=192*4
+out_dim=128
+
+
+#DINO head params
+hidden_dim=512
+bottleneck_dim=256
+norm_last_layer = True
+
+# teacher parameters
+warmup_teacher_temp = 0.04
+teacher_temp = 0.04
+warmup_teacher_temp_epochs = 0
+momentum_teacher = 0.996
+
+student_temp = 0.1
+
+
+#multi crop params
+multicrop=True
+global_crops_scale=(0.4, 1.)
+local_crops_scale=(0.05, 0.4)
+local_crops_number=8

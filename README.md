@@ -38,7 +38,7 @@ You may find some error like "Parameters are missing", that's because as I gradu
 In SSL part, the backbone is PyramidNet and ViT, the training logs are in `./results/ContrastiveLearning`, you can use tensorboard to visualize them. 
 Here I summarize some results below in table.
 
-Common setting: k=7(kNN-Monitor), lr=1e-4, out_dim=128, bs=256, weight_decay=1e-4
+Common setting: k=7(kNN-Monitor), lr=2e-1, out_dim=128, bs=256, weight_decay=1e-4, optim=SGD
 
 Methods|Backbone|Config|Temperature|Other param|kNN Top1
 :--:|:--:|:--:|:--:|:--:|:--:

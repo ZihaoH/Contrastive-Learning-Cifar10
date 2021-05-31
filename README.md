@@ -55,5 +55,7 @@ BYOL|PyramidNet|BYOL_PyramidNet_1.cf|None|None|89.22
 DINO|ViT|DINO_ViT_1.cf|student_t=0.1<br>teacher_t=0.04|lr=5e-4<br>local_crops=8|83.93
 DINO|ViT|DINO_ViT_2.cf|student_t=0.2<br>teacher_t=0.1|lr=5e-4<br>local_crops=8|83.78
 DINO|ViT|DINO_ViT_3.cf|student_t=0.1<br>teacher_t=0.04|lr=5e-4|77.92
-MoCoV3|ViT|MoCo_ViT_1.cf|0.1|memory_bank=True<br>local_crops=8|72.14
+MoCoV3|ViT|MoCo_ViT_1.cf|0.1|memory_bank=False<br>local_crops=8|72.14
+MoCoV3|ViT|MoCo_ViT_2.cf|0.07|memory_bank=False<br>local_crops=8|68.54
+MoCoV3|ViT|MoCo_ViT_3.cf|0.2|memory_bank=False<br>local_crops=8|75.75
 
